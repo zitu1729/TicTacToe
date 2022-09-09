@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true">
+
+    <TableLayout
+        android:id="@+id/table_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:minHeight="0dp">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#ffffff"
+            android:minWidth="0dp"
+            android:minHeight="0dp">
+
+            <ImageButton
+                android:id="@+id/image_view11"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/thumbnail"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+
+            <ImageButton
+                android:id="@+id/image_view12"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/thumbnail"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+
+            <ImageButton
+                android:id="@+id/image_view13"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/thumbnail"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#ffffff"
+            android:minWidth="0dp"
+            android:minHeight="0dp">
+
+            <ImageButton
+                android:id="@+id/image_view21"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/thumbnail"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+
+            <ImageButton
+                android:id="@+id/image_view22"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="0dp"
+                android:background="@drawable/thumbnail"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+
+            <ImageButton
+                android:id="@+id/image_view23"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/thumbnail"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:minWidth="0dp"
+            android:minHeight="0dp">
+
+            <ImageButton
+                android:id="@+id/image_view31"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/thumbnail"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+
+            <ImageButton
+                android:id="@+id/image_view32"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/thumbnail"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+
+            <ImageButton
+                android:id="@+id/image_view33"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/thumbnail"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/player_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:text="Player X :"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/player1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/player_1"
+        android:text="00"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/player_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_1"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Player O :"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/player2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/player1_score"
+        android:layout_toRightOf="@id/player_2"
+        android:text="00"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/reset_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table_view"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="18dp"
+        android:background="#d9d7d7"
+        android:gravity="center"
+        android:text="reset"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>
